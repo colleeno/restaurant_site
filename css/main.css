@@ -1,0 +1,256 @@
+/*
+Project Name: QSR Site
+Client: Your Client
+Author: Colleen O'Reilly
+*/
+
+
+/*=============================
+UTILITY
+=============================*/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; 
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; 
+}
+
+/*============================
+BASE STYLES
+============================*/
+
+body {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*============================
+LAYOUT
+============================*/
+
+.main-hero {
+  background: url('../images/juicehero.jpg');
+  background-position:center top;
+  background-repeat: no-repeat;
+  background-size:100%;
+  height: 450px;
+  overflow: auto;
+  background-attachment: fixed;
+
+}
+
+
+.hero-content-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-content {
+  border: 1px solid white;
+  width: 60%;
+  margin: 15% auto 0;
+  padding: 20px;
+  color: white;
+
+}
+
+h1 {
+  font-size: 7rem;
+  text-align: center;
+}
+
+.home-body h1 {
+  text-shadow: -3px 2px #666666;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+#menu-body h1 {
+  font-size: 4rem;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#menu-body .navbar {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .navbar a {
+  color: white;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.section-container {
+  width: 100%;
+}
+
+
+.section-content {
+  width: 50%;
+  margin: 0 auto;
+  overflow: auto;
+
+}
+
+.main-section1 {
+  padding: 50px 0;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.main-section2 {
+  background-image: url('../images/fruithands.jpg');
+  background-position:center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 400px;
+
+}
+
+
+
+.footer-wrapper {
+  width: 100%;
+  height: 250px;
+
+}
+
+#menu-body {
+  background: url('../images/whitebrickwall.jpg');
+  background-position:center top;
+  background-repeat: repeat;
+  background-size:100%;
+  height: 100%;
+  overflow: auto;
+}
+
+#menu-items {
+  position: relative;
+}
+
+
+.row-margin {
+  margin: 25px 0;
+}
+
+.glyphicon-leaf {
+  color: #379b76;
+}
+
+/*============================
+MEDIA QUERIES
+============================*/
+
+@media screen and (min-width: 993px) {
+  .main-hero {
+  height: 550px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .main-hero {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .main-hero {
+    background: url('../images/juiceheromobile.jpg');
+    height: 402px;
+    background-attachment: fixed;
+  }
+  .navbar ul a {
+    color: #666666;
+  }
+  .navbar ul li {
+    background-color: white;
+  }
+  .hero-content {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 585px) {
+
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    .hero-content {
+      width: 90%;
+      margin: 100px auto 0;
+    }
+    .main-hero {
+      background-size: 100% 100%;
+      background: url('../images/juiceheromobile.jpg');
+      background-attachment: fixed;
+    }
+    .navbar ul a {
+    color: #666666;
+    }
+
+    .navbar ul li {
+    background-color: white;
+    }
+  }
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .main-hero {
+    height: 306px;
+  }  
+  .navbar ul a {
+  color: #666666;
+  }
+
+  .navbar ul li {
+    background-color: white;
+  }
+}
+
